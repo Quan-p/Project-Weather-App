@@ -1,0 +1,1 @@
+(()=>{"use strict";window.onload=()=>{fetch("http://api.openweathermap.org/data/2.5/weather?q=London&APPID=44417ab558331b507b15ba59e307962f").then((o=>o.json())).then((o=>{console.log(o)})).catch((()=>{console.log("error")}))}})();
