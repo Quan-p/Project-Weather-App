@@ -21,4 +21,4 @@ function fetchWeather(location) {
         });
 }
 
-export {fetchWeather};
+export default fetchWeather;
