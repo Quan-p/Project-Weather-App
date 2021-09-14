@@ -1,5 +1,5 @@
 import { fetchWeather } from './apiFunctions';
 
 window.onload = () => {
-    fetchWeather('London');
-}
+    fetchWeather('Texas');
+};
