@@ -1,13 +1,7 @@
 function getLocation() {
-    const form = document.getElementById('locationInput');
-    const input = document.getElementById('location');
-    let inputVal;
+    const input = document.getElementById('inputVal');
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        inputVal = input.value;
-    });
-    return inputVal;
+    return input.value;
 }
 
 export default getLocation;
