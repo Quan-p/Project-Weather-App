@@ -10,12 +10,17 @@ function addWeather(data) {
     document.getElementById('location').innerHTML = data.name;
 }
 
+function wallpaper(data) {
+    const weatherData = data.weather[0].main;
+}
+
 async function fetchWeather(location) {
     const key = '44417ab558331b507b15ba59e307962f';
     fetch('http://api.openweathermap.org/data/2.5/weather?q=' + location + '&APPID=' + key, { mode: 'cors' })
         .then((response) => response.json())
         .then((data) => {
             addWeather(data);
+            console.log(data);
         })
         .catch(() => {
             console.log('error');
