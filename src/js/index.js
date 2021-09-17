@@ -1,4 +1,5 @@
-import fetchWeather from './apiFunctions';
+import { fetchWeather, skyData } from './apiFunctions';
+import { wallpaperPick } from './search';
 
 window.onload = () => {
     fetchWeather('Austin');

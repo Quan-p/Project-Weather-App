@@ -10,12 +10,14 @@ function addWeather(data) {
     document.getElementById('location').innerHTML = data.name;
 }
 
-function wallpaper(data) {
-    const weatherData = data.weather[0].main;
+function skyData(data) {
+    const skyInfo = data.weather[0].main;
+    return skyInfo;
 }
 
 async function fetchWeather(location) {
     const key = '44417ab558331b507b15ba59e307962f';
+    let skyInfo;
     fetch('http://api.openweathermap.org/data/2.5/weather?q=' + location + '&APPID=' + key, { mode: 'cors' })
         .then((response) => response.json())
         .then((data) => {
@@ -27,4 +29,7 @@ async function fetchWeather(location) {
         });
 }
 
-export default fetchWeather;
+export {
+    fetchWeather,
+    skyData,
+};
