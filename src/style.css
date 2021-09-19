@@ -5,3 +5,20 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
+#weather {
+    margin-left: 30px;
+}
+
+#description {
+    font-size: 35px;
+}
+
+#temp {
+    font-size: 45px;
+
+}
+
+#location {
+    font-size: 35px;
+}
