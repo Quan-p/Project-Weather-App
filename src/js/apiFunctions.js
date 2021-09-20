@@ -10,7 +10,10 @@ function addWeather(data) {
 }
 
 function weatherType(data) {
-    const skyInfo = data.weather[0].main;
+    const iconCode = data.weather[0].icon;
+    const iconUrl = 'http://openweathermap.org/img/wn/' + iconCode + '@2x.png';
+
+    document.getElementById('icon').setAttribute('src', iconUrl);
 }
 
 async function fetchWeather(location) {
@@ -20,7 +23,7 @@ async function fetchWeather(location) {
         .then((response) => response.json())
         .then((data) => {
             addWeather(data);
-            console.log(data);
+            weatherType(data);
         })
         .catch(() => {
             console.log('error');
