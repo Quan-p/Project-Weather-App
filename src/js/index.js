@@ -1,4 +1,4 @@
-import { fetchWeather } from './apiFunctions';
+import fetchWeather from './apiFunctions';
 
 window.onload = () => {
     fetchWeather('Austin');

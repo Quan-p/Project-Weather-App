@@ -9,9 +9,8 @@ function addWeather(data) {
     document.getElementById('location').innerHTML = data.name;
 }
 
-function skyData(data) {
+function weatherType(data) {
     const skyInfo = data.weather[0].main;
-    return skyInfo;
 }
 
 async function fetchWeather(location) {
@@ -28,7 +27,4 @@ async function fetchWeather(location) {
         });
 }
 
-export {
-    fetchWeather,
-    skyData,
-};
+export default fetchWeather;
