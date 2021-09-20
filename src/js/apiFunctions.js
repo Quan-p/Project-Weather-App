@@ -6,7 +6,7 @@ function addWeather(data) {
     const fahrenheit = Math.round(((parseFloat(data.main.temp) - 273.15) * 1.8) + 32);
 
     document.getElementById('description').innerHTML = data.weather[0].description;
-    document.getElementById('temp').innerHTML = fahrenheit + '&deg';
+    document.getElementById('temp').innerHTML = fahrenheit + '&degF';
     document.getElementById('location').innerHTML = data.name;
 }
 
