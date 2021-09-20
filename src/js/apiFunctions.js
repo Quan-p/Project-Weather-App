@@ -2,7 +2,6 @@
 /* eslint-disable prefer-template */
 
 function addWeather(data) {
-    const celsius = Math.round(parseFloat(data.main.temp) - 273.15);
     const fahrenheit = Math.round(((parseFloat(data.main.temp) - 273.15) * 1.8) + 32);
 
     document.getElementById('description').innerHTML = data.weather[0].description;
