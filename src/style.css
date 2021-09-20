@@ -8,6 +8,7 @@ body {
 
 #weather {
     margin: 20px;
+    color: #f5f5f5;
 }
 
 #description {
@@ -16,9 +17,31 @@ body {
 
 #temp {
     font-size: 45px;
-
 }
 
 #location {
     font-size: 35px;
+}
+
+#locationInput {
+    margin: 20px;
+}
+
+#inputVal {
+    height: 100%;
+    background: transparent;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    box-shadow: none;
+    color: #f5f5f5;
+}
+
+::placeholder {
+    color: #f5f5f5;
+}
+
+#inputVal:focus {
+    outline: none;
+    background-color: transparent;
 }
