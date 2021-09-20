@@ -5,6 +5,7 @@
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/src/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <div id='weather'>
@@ -15,7 +16,11 @@
         <script src="/dist/main.js" async defer></script>
         <form id='locationInput' autocomplete='off'>
             <input type='text' id='inputVal' placeholder='Search Location...' autofocus>
-            <button type="submit">SUBMIT</button>
+            <button type="submit">
+                <span class="material-icons">
+                    search
+                </span>    
+            </button>
             <span class="msg"></span>
         </form>
     </body>
